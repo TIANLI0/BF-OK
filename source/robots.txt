@@ -1,0 +1,3 @@
+Disallow: /Test/
+Disallow: /Love/
+Sitemap: https://tianli-blog.club/sitemap.xml

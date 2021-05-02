@@ -1,0 +1,93 @@
+if hexo-config('aside.card_clock.enable')
+  @font-face
+    font-family 'UnidreamLED'
+    src url('/assets/fonts/UnidreamLED.ttf')
+    font-display swap
+  #clock
+    height 153px
+    padding 20px 10px
+    border-radius 8px
+    background-color rgb(236, 236, 236)
+    box-shadow inset 3px 3px 18px 0px rgba(50,50,50, 0.4)
+    z-index 2
+    font-family 'UnidreamLED'
+    color: #000000
+    th
+      padding 0
+      border 0
+    td
+      padding 0
+      border 0
+    .clockdate
+      font-size 14px
+      font-weight normal
+      margin-block-start 0em
+      margin-block-end 0em
+      line-height 1
+      min-width 20px
+    .time
+      font-size 38px
+      font-weight normal
+      margin-block-start 0em
+      margin-block-end -0.2em
+      line-height 1.5
+      text-align center
+
+    .daylight
+      text-align right
+      min-width 20px
+
+    #weatherimg
+      -webkit-filter brightness(0%)
+      filter brightness(0%)
+      width 14px!important
+      height 14px!important
+
+    #humidityimg
+      -webkit-filter brightness(0%)
+      filter brightness(0%)
+      width 14px!important
+      height 14px!important
+
+    .humidityimg
+      min-width 20px
+      text-align right
+      padding-right 3px
+
+
+    .weatherimg
+      min-width 20px
+      padding-right 3px
+
+
+    .temperature
+      min-width 20px
+      padding-right 3px
+
+    .humidity
+      text-align right
+      min-width 20px
+      padding-right 3px
+
+    .usaqi
+      height 30px
+      min-width 20px
+
+    .city
+      text-align center
+      min-width 20px
+      padding-right 3px
+
+
+  [data-theme="dark"]
+    #clock
+      background-color: #212121
+      td
+        color: rgba(255,255,255,0.8)!important
+      #weatherimg
+        -webkit-filter brightness(1000%)
+        filter brightness(1000%)
+
+      #humidityimg
+        -webkit-filter brightness(1000%)
+        filter brightness(1000%)

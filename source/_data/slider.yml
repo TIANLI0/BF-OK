@@ -1,0 +1,25 @@
+#- cover: 封面图片链接
+#  timeline: '2020-10-01' # 日期，需要用''包裹
+#  link: 置顶文章链接，站内文章建议填相对链接
+# title: 置顶文章标题
+# description: 置顶文章描述
+#button: 手机端按钮内容
+# 示例如下
+- cover: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/0563a50291696c4be98a004b51d91503.jpg
+  timeline: '2021-01-27'
+  link: /link
+  title: 📁友情链接
+  description: 朋友的网站啦.
+  button: 🍡详情
+- cover: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/sxt/4.png
+  timeline: '2021-02-01'
+  link: /2021/01/28/sxt/
+  title: 🦋水文(bushi)
+  description: 你想看你的市排名吗？
+  button: 🍡详情
+- cover: https://img.api.tianli0.top
+  timeline: '2021-02-16'
+  link: /2021/04/10/memories/
+  title: 回忆集
+  description: 记录是一种生活
+  button: 🍡详情

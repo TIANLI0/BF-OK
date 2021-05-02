@@ -1,0 +1,48 @@
+#article-container
+  if top_img === false
+    h1.page-title= page.title
+  if theme.fcircle.enable
+    #friend_link_circle
+      .article-sort-title 统计信息
+      .article-sort      
+        #info_user_poor
+          .chart
+            span.friend_post_info_title 当前友链数:
+            span.friend_post_info_number {{user_lenth}}个
+            br
+            span.friend_post_info_title 失败数:
+            span.friend_post_info_number {{error}}个
+            br
+          .chart
+            span.friend_post_info_title 活跃友链数:
+            span.friend_post_info_number {{unique_live_link}}个
+            br
+            span.friend_post_info_title 当前库存:
+            span.friend_post_info_number {{listlenth}}篇
+            br
+          .chart
+            span.friend_post_info_title 今日更新:
+            span.friend_post_info_number {{today_post}}篇
+            br
+            span.friend_post_info_title 最近更新:
+            span.friend_post_info_number {{last_update_time}}
+      div(v-for='datalist in datalist_slice')
+        .article-sort-title(v-if='datalist[2]-maxnumber<0') {{datalist[0]}}
+        .article-sort
+          .article-sort-item(v-if='item[6]-maxnumber<0' v-for='(item,i) in datalist[1]')
+            a.article-sort-item-img(:target='opentype' :href='item[2]' :title='item[0]')
+              img.entered.loaded(onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` data-ll-status='loaded' :src='item[4]')
+            .article-sort-item-info
+              .article-sort-item-time
+                i.far.fa-user
+                span {{item[3]}}
+                .friend_post_time
+                  i.far.fa-calendar-alt
+                  time.post-meta-date-created(:datetime='item[1]' :title='item[1]') {{item[1]}}
+              a.article-sort-item-title(:target='opentype' :href='item[2]' :title='item[0]') {{item[0]}}
+      div(style='text-align: center')
+        button.load_button(v-if='loadmore_display' type='button' @click='addmaxnumber()') 加载更多...
+      script.
+        requests_url = '!{url_for(theme.fcircle.apiurl)}'
+      script(defer data-pjax src=url_for(theme.CDN.fcircle))
+  != page.content

@@ -1,0 +1,15 @@
+.blog-slider.swiper-container-fade.swiper-container-horizontal#swiper_container
+  .blog-slider__wrp.swiper-wrapper(style='transition-duration: 0ms;')
+    if site.data.slider
+      each i in site.data.slider
+        .blog-slider__item.swiper-slide(style='width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;')
+          a.blog-slider__img(href=url_for(i.link)  alt='')|
+            img(width='48' height='48' src=url_for(i.cover) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.post_page) + `'`, alt='')
+          .blog-slider__content
+            span.blog-slider__code= i.timeline
+            a.blog-slider__title(href=url_for(i.link)  alt='')= i.title
+            .blog-slider__text= i.description
+            a.blog-slider__button(href=url_for(i.link)  alt='')= i.button      
+  .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets
+script(defer src=url_for(theme.CDN.swiper_js))
+script(defer data-pjax src=url_for(theme.CDN.swiper_init))

@@ -1,0 +1,83 @@
+- class_name: 友情链接
+  class_desc: 那些人，那些事
+  link_list:
+    - name: Xiayu
+      link: https://www.cloudkerz.com/
+      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/link1.png
+      descr: 一个腾飞云上的小站
+    - name: Strit
+      link: https://strit.top
+      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/link2.jpg
+      descr: 一个爱拍照的小loli的站点
+    - name:  GamerNoTitle
+      link: https://bili33.top/
+      avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png
+      descr: 一个在懵懂无知中成长的高中生程序员^V^
+    - name:  Radium·Stardust
+      link: https://radiumbit.tk/
+      avatar: https://cdn.jsdelivr.net/gh/radium-bit/res@latest/avatar.webp
+      descr: Always believe that good things are about to happen.
+    - name:  林中鹿仙
+      link: https://www.zoukaixin.com
+      avatar: https://zoukaixin.com/upload/2021/02/blog11-db339d4466164bd081ca1aec75a295db.png
+      descr: 但行好事，莫问前程
+    - name: CC's Zone
+      link: https://ccs.zone
+      avatar: https://cdn.jsdelivr.net/gh/caicheng918/CDN/photo/avater.jpg
+      descr: 从未来再见
+    - name: Little-Demon
+      link: https://www.little-demon.cn
+      avater: https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/tit.png
+      descr: 一直在路上奋斗的电子爱好者
+- class_name: 酷安友链
+  class_desc: 基佬聚集处
+  link_list:
+    - name: Seimo
+      link: https://seimo.xyz/
+      avatar: https://avatar.dawnlab.me/qq/2789263103
+      descr: 谎言重复了一千遍就成了真理。
+    - name: 樱花社区
+      link: https://sakura-bbs.cn/
+      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/web/%E6%A8%B1%E8%8A%B1.jpg
+      descr: 小而美的极客社区
+    - name: 老陈の咸鱼日常
+      link: http://fantanstic.top/
+      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/IMG_20201116_215237.jpg
+      descr: Never Settle
+    - name: 氢橙数码
+      link: https://www.rmvsm.cn/
+      avatar: https://bbs.rmvsm.cn/storage/avatars/000/00/18/32.png?1609568068
+      descr: 站在科技与生活的十字路口
+
+
+- class_name: 友情链接
+  class_desc: 大佬聚集处
+  link_list:
+    - name: Akilarの糖果屋
+      link: https://akilar.top/
+      avatar: https://akilar.top/img/siteicon/favicon.png
+      descr: 期待您的光临！
+    - name: 小冰博客
+      link: https://zfe.one
+      avatar: https://zfe.space/images/headimage.png
+      descr: 做个有梦想的人！
+    - name: 小嘉的部落格	 # 站點名稱
+      link: https://blog.imzjw.cn    # 站點鏈接
+      avatar: https://cdn.jsdelivr.net/gh/zjwo/CDN/img/blog/avatar.jpg  # 站點頭像
+      descr: 好记性不如烂笔头	 # 站點描述
+    
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: JerryC
+      link: https://jerryc.me/
+      avatar: https://jerryc.me/image/avatar.png
+      descr: 本站主题来源
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网誌框架
+    - name: 夏日甜提子
+      link: https://tianli0.xyz
+      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/link3.jpg
+      descr: 三人运维的小网站
