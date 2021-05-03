@@ -147,6 +147,7 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
+#搜索引擎推送功能
 hexo_submit_urls_to_search_engine:
   submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
   count: 10 # 提交最新的10个链接
@@ -156,9 +157,9 @@ hexo_submit_urls_to_search_engine:
   baidu: 1 # 是否向baidu提交，可选值：1 | 0（0：否；1：是）
   txt_path: submit_urls.txt ## 文本文档名， 需要推送的链接会保存在此文本文档里
   baidu_host: https://tianli-blog.club/ ## 在百度站长平台中注册的域名
-  baidu_token: uso72lknm89KEbn7 ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  baidu_token:  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   bing_host: https://tianli-blog.club/  ## 在bing站长平台中注册的域名
-  bing_token: 07e793606fd841178ef3404f17885cb9  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  bing_token:   ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   google_host: https://tianli-blog.club/ ## 在google站长平台中注册的域名
   google_key_file: Project.json #存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!
   replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
@@ -166,6 +167,7 @@ hexo_submit_urls_to_search_engine:
   replace_with: https://tianli-blog.club/
 
   # Security
+  # 加密插件
 encrypt: # hexo-blog-encrypt
   abstract: 有东西被加密了, 请输入密码查看.
   message: 您好, 这里需要密码.
