@@ -147,7 +147,7 @@ error_img:
 error_404:
   enable: true
   subtitle: '网页消失了哦！'
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: https://img1.tianli0.top/404.png
 
 post_meta:
   page: # Home Page
@@ -194,11 +194,11 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Sponsor/reward
+# Sponsor/reward 换成自己的
 reward:
   enable: true
   QR_code:
-     - img: https://img1.tianli0.top/wechat.png
+     - img: https://img1.tianli0.top/wechat.png 
        link: https://img1.tianli0.top/wechat.png
        text: wechat
      - img: https://img1.tianli0.top/alipay.jpg
@@ -348,7 +348,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: talk-8g863wau6e4803f5
+  envId: 
   region: 
   option:
 
@@ -372,7 +372,7 @@ chatra:
 # https://www.tidio.com/
 tidio:
   enable: true
-  public_key: kovicgiwccdfvut03jfg6nutf5xh92k8
+  public_key: 
 
 # daovoice
 # http://daovoice.io/
@@ -397,7 +397,7 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2021
   custom_text: <p><a style="margin-inline:5px"target="_blank"href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo"title="博客框架为Hexo"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender"title="主题采用butterfly"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://now.sh"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel"title="本站使用部署于Vercel"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub"title="本站项目由Gtihub托管"alt="img"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"alt="img"title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p><div class="moe"></a><a href="https://icp.gov.moe" target="_blank"></a>萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20212003" target="_blank"></a> 20212003号</a><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.beian.miit.gov.cn/"><span class="icp" >蜀ICP备2021004404号</span></a></div>
   copyright: false # Copyright of theme and framework
 
@@ -406,7 +406,7 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics: 687404a584807571f47cbfd0e945a286
+baidu_analytics: 
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -426,7 +426,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: 54rgo8puod
+microsoft_clarity:
 
 # Advertisement
 # --------------------------------------
@@ -885,6 +885,7 @@ css_prefix: true
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
+# 最好别动 如果想自己修改，可以将链接下载下来，并自己修改
 inject:
   head:
      - <link rel="stylesheet" href="https://img1.tianli0.top/copyright.css">
@@ -898,7 +899,7 @@ inject:
       - <script src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script>
       - <script src="/js/moments.js"></script>
       - <script src="/js/timing.js"></script> 
-#gitcalendar
+#gitcalendar 来自小冰博客
 gitcalendar:
   enable: true
   simplemode: false
@@ -907,7 +908,7 @@ gitcalendar:
   #canvas：dom数少，但图像会发生模糊，自适应一般
   #svg：dom数多，图像清晰，自适应更佳
   user: Tianli0 #这里填写你的github用户名
-  apiurl: git-api.vercel.app # 留空为默认公共API，自建api内容详见下节
+  apiurl: git-api.vercel.app #不需要替换
   # 以下色调选择喜欢的一行保留即可。其余注释。
   #color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
   # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
@@ -915,7 +916,7 @@ gitcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
 # CDN
 # Don't modify the following settings unless you know how they work
-# 非必要請不要修改
+# 非必要請不要修改 千万别动
 CDN:
   # main
   main_css: /css/index.css
