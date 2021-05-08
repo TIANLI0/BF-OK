@@ -143,3 +143,11 @@ https://butterfly.js.org
 此代码为不进行渲染的代码{% raw %}{% endraw %}
 
 日志：更换分支main
+
+TODO：
+重构BF-OK 基于Butterfly 3.7.5修改
+依赖重适配
+
+BUG：
+在文章页控制台报错
+Uncaught TypeError: Cannot read property 'offsetWidth' of null at (index):653
