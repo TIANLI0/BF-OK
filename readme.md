@@ -144,6 +144,9 @@ https://butterfly.js.org
 
 日志：更换分支main
 
+
+对于开发者：侧栏倒计时请定位至 'theme/butterfly/source/js/timing.js' 修改
+
 TODO：
 重构BF-OK 基于Butterfly 3.7.5修改
 依赖重适配
