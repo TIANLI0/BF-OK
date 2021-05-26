@@ -1,3 +1,27 @@
+# TODO
+
+重构BF-OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 部署教程
 
 ## 1.安装Git
@@ -147,10 +171,3 @@ https://butterfly.js.org
 
 对于开发者：侧栏倒计时请定位至 'theme/butterfly/source/js/timing.js' 修改
 
-TODO：
-重构BF-OK 基于Butterfly 3.7.5修改
-依赖重适配
-
-BUG：
-在文章页控制台报错
-Uncaught TypeError: Cannot read property 'offsetWidth' of null at (index):653
