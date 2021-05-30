@@ -53,6 +53,7 @@ pagination:
 comment: 评论
 
 aside:
+  card_countdown: 高考倒计时 #自定义名称
   articles: 文章
   tags: 标签
   categories: 分类
@@ -82,7 +83,6 @@ aside:
     link: 链接
     code: 代码
   card_toc: 目录
-  card_countdown: 高考倒计时 
 
 date_suffix:
   just: 刚刚

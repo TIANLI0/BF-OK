@@ -5,6 +5,24 @@ comments: false
 top_img: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/0563a50291696c4be98a004b51d91503.jpg
 ---
 
+**Hi,我是Tianli 欢迎来到我的个人博客**
+
+这是一个萌新的个人站点，会不定期发布一些有趣的文章
+
+主要活跃于酷安
+
+因为所有项目迁移至了coding,所以github现在一片空白啦
+
+![Tianli0](https://count.getloli.com/get/@:Tianli0)
+
+
+
+------
+
+{% btn 'https://www.coolapk.com/u/1382033',酷安,far fa-hand-point-right,green larger %} {% btn 'https://github.com/Tianli0',Github,far fa-hand-point-right,pink larger %} {% btn 'https://www.realmebbs.com/user/464226661/posts',realme社区,far fa-hand-point-right,orange larger %}{% btn 'https://stats.uptimerobot.com/9GJ5lsmJ07',网站监控,far fa-hand-point-right,orange larger %}
+
+------
+
 # CC许可协议
 
 为了保持文章质量，并保持互联网的开放共享精神，保持页面流量的稳定，综合考虑下本站的所有原创文章均采用cc协议中比较严格的[署名-非商业性使用-禁止演绎 4.0 国际](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)标准。这篇文章主要想能够更加清楚明白的介绍本站的协议标准和要求。方便您合理的使用本站的文章。

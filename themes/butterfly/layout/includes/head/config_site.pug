@@ -6,14 +6,16 @@
 
   var pageToc = page.toc === true || page.toc === false ? page.toc : theme.toc.enable
   var showToc = is_post() && theme.aside.enable && pageToc && (toc(page.content) !== '' || page.encrypt == true )
+
+  let titleVal = pageTitle.replace(/'/ig,"\\'")
 -
 
-script#config-diff
-  .
-    var GLOBAL_CONFIG_SITE = { 
-      isPost: !{is_post()},
-      isHome: !{is_home()},
-      isHighlightShrink: !{isHighlightShrink},
-      isToc: !{showToc},
-      postUpdate: '!{full_date(page.updated)}'
-    }
+script#config-diff.
+  var GLOBAL_CONFIG_SITE = {
+    title: '!{titleVal}',
+    isPost: !{is_post()},
+    isHome: !{is_home()},
+    isHighlightShrink: !{isHighlightShrink},
+    isToc: !{showToc},
+    postUpdate: '!{full_date(page.updated)}'
+  }

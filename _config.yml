@@ -4,7 +4,7 @@
 
 # Site
 title: Tianli's blog
-subtitle: ''
+subtitle: tianli-blog.club
 description: "一个萌新分享自己仅存的技术的地方"
 keywords: Tianli
 author: Tianli
@@ -30,6 +30,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - kernel.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -147,7 +148,6 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
-#搜索引擎推送功能
 hexo_submit_urls_to_search_engine:
   submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
   count: 10 # 提交最新的10个链接
@@ -157,9 +157,9 @@ hexo_submit_urls_to_search_engine:
   baidu: 1 # 是否向baidu提交，可选值：1 | 0（0：否；1：是）
   txt_path: submit_urls.txt ## 文本文档名， 需要推送的链接会保存在此文本文档里
   baidu_host: https://tianli-blog.club/ ## 在百度站长平台中注册的域名
-  baidu_token:  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  baidu_token: uso72lknm89KEbn7 ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   bing_host: https://tianli-blog.club/  ## 在bing站长平台中注册的域名
-  bing_token:   ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  bing_token: 07e793606fd841178ef3404f17885cb9  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   google_host: https://tianli-blog.club/ ## 在google站长平台中注册的域名
   google_key_file: Project.json #存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!
   replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
@@ -167,7 +167,6 @@ hexo_submit_urls_to_search_engine:
   replace_with: https://tianli-blog.club/
 
   # Security
-  # 加密插件
 encrypt: # hexo-blog-encrypt
   abstract: 有东西被加密了, 请输入密码查看.
   message: 您好, 这里需要密码.
@@ -175,3 +174,45 @@ encrypt: # hexo-blog-encrypt
   - {name: tagName1, password: 密码A}
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+
+# Ice Kano Plus_in
+# Hexo Github Canlendar
+# Author: Ice Kano
+# Modify: Lete乐特
+githubcalendar:
+  enable: true
+  enable_page: /
+  user: TIANLI0
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  githubcalendar_html: '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>'
+  pc_minheight: 280px
+  mobile_minheight: 0px
+  color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']"
+  api: https://git-api-7yu2cb4r5.vercel.app/api
+  # api: https://python-gitee-calendar-api.vercel.app/api
+  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  plus_style: ""
+
+history_calendar:
+  priority: 5
+  enable: true
+  enable_page: all
+  layout:
+    type: class
+    name: sticky_layout
+    index: 0
+  temple_html: '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>'
+
+electric_clock:
+  priority: 4
+  enable: true
+  enable_page: all
+  layout:
+    type: class
+    name: sticky_layout
+    index: 0
+  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
+

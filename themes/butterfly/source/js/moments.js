@@ -1,4 +1,4 @@
-var requests_url = 'https://hexo-circle-of-friends-api-eight.vercel.app/api'; //api地址
+var requests_url = 'https://hexo-circle-of-friends-api-tianli0.vercel.app/api'; //api地址
 var orign_data = []; //api请求所得到的源数据
 var maxnumber = 20; //页面展示文章数量
 var addnumber = 10; //每次加载增加的篇数
@@ -6,7 +6,7 @@ var opentype = '_blank';  //'_blank'打开新标签,'_self'本窗口打开
 var nofollow = true; //禁止搜索引擎抓取
 // 自定义loading图 例如: var loadingCutom = '<i class="fa fa-spinner fa-spin"></i>'
 // 自定义loading图 例如: var loadingCutom = '<img src="你的图片地址" alt="加载中...">'
-var loadingCutom = ''
+var loadingCutom = '<img src="https://img1.tianli0.top/loading.gif" alt="加载中...">'
 
 //处理数据
 
@@ -16,9 +16,9 @@ if(document.getElementById('moments_container')){
   
   // 判断loadingCutom值是否为空
   if(typeof loadingCutom == "undefined" || loadingCutom == null || loadingCutom === "") {
-    loading_pic.innerHTML = '<span id="moments_loading"><i class="fa fa-spinner fa-spin"></i></span>';
+    loading_pic.innerHTML = '<style>.loader { color: #d9dad8; font-size: 90px; text-indent: -9999em; overflow: hidden; width: 1em; height: 1em; border-radius: 50%; margin: 72px auto; position: relative; -webkit-transform: translateZ(0); -ms-transform: translateZ(0); transform: translateZ(0); -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease; animation: load6 1.7s infinite ease, round 1.7s infinite ease; } @-webkit-keyframes load6 { 0% { box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } 5%, 95% { box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } 10%, 59% { box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; } 20% { box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; } 38% { box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; } 100% { box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } } @keyframes load6 { 0% { box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } 5%, 95% { box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } 10%, 59% { box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; } 20% { box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; } 38% { box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; } 100% { box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } } @-webkit-keyframes round { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } } @keyframes round { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }</style><center><span id="moments_loading"><div class="loader"></div></span></center>';
   } else {
-    loading_pic.innerHTML = '<span id="moments_loading">'+loadingCutom+'</span>';
+    loading_pic.innerHTML = '<center><span id="moments_loading">'+loadingCutom+'</span></center>';
   }
 
   fetch(requests_url).then(

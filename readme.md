@@ -1,27 +1,3 @@
-# TODO
-
-重构BF-OK
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 部署教程
 
 ## 1.安装Git
@@ -167,7 +143,3 @@ https://butterfly.js.org
 此代码为不进行渲染的代码{% raw %}{% endraw %}
 
 日志：更换分支main
-
-
-对于开发者：侧栏倒计时请定位至 'theme/butterfly/source/js/timing.js' 修改
-
