@@ -143,5 +143,3 @@ $ hexo server
 https://butterfly.js.org
 
 此代码为不进行渲染的代码{% raw %}{% endraw %}
-
-日志：更换分支main
