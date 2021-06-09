@@ -38,7 +38,6 @@ npm -v
 检查一下有没有安装成功
 
 
-
 顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。
 
 ## 3.安装hexo
