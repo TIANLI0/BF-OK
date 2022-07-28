@@ -1,0 +1,50 @@
+name: 自动部署
+# 当有改动推送到master分支时，启动Action
+on:
+  push:
+    branches:
+      - main
+      #2020年10月后github新建仓库默认分支改为main，注意更改
+  release:
+    types:
+      - published
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: 安装 Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: 安装 Hexo
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          npm install gulp-cli -g #全局安装gulp
+          npm install --save
+          npm i gulp-replace --save
+          npm install -g npm-check
+          npm install -g npm-upgrade
+      - name: 生成静态文件
+        run: |
+          hexo clean
+          hexo generate
+          gulp 
+          #运行gulp
+      - name: 部署
+        run: |
+          sudo su root
+          git config --global user.name "your id"
+          git config --global user.email "your email"
+
+          # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
+          # =====注意.deploy_git前面有个空格=====
+          # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
+          hexo deploy

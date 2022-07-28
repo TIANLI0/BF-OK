@@ -8,19 +8,34 @@ if theme.menu
         .menus_item
           a.site-page(href=url_for(trim(value.split('||')[0])))
             if value.split('||')[1]
-              i.fa-fw(class=trim(value.split('||')[1]))
+              - var icon_value = trim(value.split('||')[1])
+              if icon_value.substring(0,2)=="fa"      
+                i.fa-fw(class=icon_value)
+              else if icon_value.substring(0,4)=="icon"          
+                svg.icon(aria-hidden="true")
+                  use(xlink:href=`#`+ icon_value)
             span=' '+label
       else
         .menus_item
           a.site-page(href='javascript:void(0);')
             if label.split('||')[1]
-              i.fa-fw(class=trim(label.split('||')[1]))
+              - var icon_label = trim(label.split('||')[1])
+              if icon_label.substring(0,2)=="fa"      
+                i.fa-fw(class=icon_label)
+              else if icon_label.substring(0,4)=="icon"    
+                svg.icon(aria-hidden="true")
+                  use(xlink:href=`#`+ icon_label)
             span=' '+ trim(label.split('||')[0])
             i.fas.fa-chevron-down.expand(class=sidebarChildHide)
           ul.menus_item_child
-            each val,lab in value 
+            each val,lab in value
               li
                 a.site-page.child(href=url_for(trim(val.split('||')[0])))
                   if val.split('||')[1]
-                    i.fa-fw(class=trim(val.split('||')[1]))
+                    - var icon_val = trim(val.split('||')[1])
+                    if icon_val.substring(0,2)=="fa"      
+                      i.fa-fw(class=icon_val)
+                    else if icon_val.substring(0,4)=="icon"
+                      svg.icon(aria-hidden="true")
+                        use(xlink:href=`#`+ icon_val)
                   span=' '+ lab

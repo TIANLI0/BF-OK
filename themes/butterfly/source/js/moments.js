@@ -83,7 +83,7 @@ var data_handle = (nofollow,data, maxnumber) => {
       }
       html_item += ' <div class="moments-item">';
       html_item += ' <a target="' + opentype + '" class="moments-item-img" href="' + post_item[2] + '" title="' + post_item[0] + '"rel="'+ rel + '">';
-      html_item += '<img onerror="this.onerror=null,this.src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-friend-poor-html/friendcircle/404.png&quot;"';
+      html_item += '<img onerror="this.onerror=null,this.src=&quot;https://cdn1.tianli0.top/gh/Zfour/Butterfly-friend-poor-html/friendcircle/404.png&quot;"';
       html_item += ' src="' + post_item[4] + '"></a>';
       html_item += '<div class="moments-item-info"><div class="moments-item-time"><i class="far fa-user"></i>';
       html_item += '<span>' + post_item[3] + '</span>';

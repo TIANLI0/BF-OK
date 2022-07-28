@@ -4,7 +4,7 @@
 
 # Site
 title: Tianli's blog
-subtitle: tianli-blog.club
+subtitle: 
 description: "一个萌新分享自己仅存的技术的地方"
 keywords: Tianli
 author: Tianli
@@ -31,6 +31,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - kernel.html
+  - /live2d-widget/
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -104,10 +105,14 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-
+- type: git
+  repo: https://mKkDIMeBRY:f8640f6cf39d0d1a43dee1d89c1455274d492299@e.coding.net/Tianli0/blog/blog.git
+  branch: master
+  message: 'Deloyed by Github Actions: {{ now("YYYY-MM--DD HH:mm:ss") }}'
 - type: cjh_google_url_submitter
 - type: cjh_bing_url_submitter
 - type: cjh_baidu_url_submitter
+
 
   # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
@@ -119,14 +124,14 @@ live2d:
   pluginModelPath: assets/ # 模型文件相对与插件根目录路径
   # scriptFrom: jsdelivr # jsdelivr CDN
   # scriptFrom: unpkg # unpkg CDN
-  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  # scriptFrom: https://cdn1.tianli0.top/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
     use: live2d-widget-model-shizuku # npm-module package name
     # use: wanko # 博客根目录/live2d_models/ 下的目录名
     # use: ./wives/wanko # 相对于博客根目录的路径
-    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+    # use: https://cdn1.tianli0.top/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
   display:
     position: right #控制看板娘位置
     width: 150 #控制看板娘大小
@@ -180,7 +185,8 @@ encrypt: # hexo-blog-encrypt
 # Author: Ice Kano
 # Modify: Lete乐特
 githubcalendar:
-  enable: true
+  enable: false
+  priority: 2
   enable_page: /
   user: TIANLI0
   layout:
@@ -193,7 +199,7 @@ githubcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']"
   api: https://git-api-7yu2cb4r5.vercel.app/api
   # api: https://python-gitee-calendar-api.vercel.app/api
-  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  calendar_js: https://cdn1.tianli0.top/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
   plus_style: ""
 
 history_calendar:
@@ -208,11 +214,12 @@ history_calendar:
 
 electric_clock:
   priority: 4
-  enable: true
+  enable: false
   enable_page: all
   layout:
     type: class
     name: sticky_layout
     index: 0
-  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
+  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn1.tianli0.top/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
+
 

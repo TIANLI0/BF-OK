@@ -22,76 +22,47 @@
     &.open
       transform: translate3d(-100%, 0, 0)
 
-    & > .author-avatar
-      padding: 1.3rem 1.5rem 0
-      text-align: center
+    & > .avatar-img
+      margin: 20px auto
 
-      img
-        width: 110px
-        height: 110px
-        border-radius: 70px
-        transition: all .5s
-
-        &:hover
-          transform: rotate(360deg)
-
-    .site-data
-      display: table
-      padding: .6rem .5rem 0
-      width: 100%
-      table-layout: fixed
-
-      .data-item
-        display: table-cell
-
-        .data-item-link
-          & > a > div
-            @extend .limit-one-line
-
-          .length-num
-            color: var(--text-highlight-color)
-            font-size: 1.28em
-
-          .headline
-            color: var(--font-color)
+    .sidebar-site-data
+      padding: 0 10px
 
     hr
-      margin: 1rem auto
+      margin: 20px auto
 
     .menus_items
-      padding: 0 .5rem 2rem
+      padding: 0 10px 40px
 
       .site-page
         @extend .limit-one-line
         position: relative
         display: block
-        padding: .3rem 1.5rem
+        padding: 6px 30px 6px 22px
         color: var(--font-color)
         font-size: 1.15em
-        cursor: pointer
+
+        &:hover
+          background: var(--text-bg-hover)
 
         i:first-child
-          width: 25%
+          width: 15%
           text-align: left
 
-        span
-          width: 75%
+        &.group
+          & > i:last-child
+            position: absolute
+            top: .78em
+            right: 18px
+            transition: transform .3s
 
-          &:hover
-            color: $light-blue
+          &.hide
+            & > i:last-child
+              transform: rotate(90deg)
 
-      .expand
-        position: absolute
-        top: .78em
-        right: .4rem
-        transition: transform .3s
-
-        &.hide
-          transform: rotate(90deg) !important
+            & + .menus_item_child
+              display: none
 
       .menus_item_child
         margin: 0
         list-style: none
-
-        if hexo-config('hide_sidebar_menu_child')
-          display: none

@@ -3,9 +3,12 @@
 .hide-block
   & > .hide-button
     display: inline-block
-    padding: .3rem 1rem
+    padding: 5px 18px
     background: $tag-hide-bg
     color: var(--white)
+
+    &:hover
+      background-color: var(--btn-hover-color)
 
     &.open
       display: none
@@ -21,35 +24,23 @@
 
 .hide-inline
   & > .hide-button
-    margin: 0 .3rem
+    margin: 0 6px
 
   & > .hide-content
-    margin: 0 .3rem
+    margin: 0 6px
 
 .hide-block
-  margin: 0 0 .8rem
+  margin: 0 0 16px
 
-.hide-toggle
-  margin-bottom: 1rem
+.toggle
+  margin-bottom: 20px
   border: 1px solid $tag-hide-toggle-bg
 
-  & > .hide-button
-    padding: .3rem .5rem
+  & > .toggle-button
+    padding: 6px 15px
     background: $tag-hide-toggle-bg
     color: #1F2D3D
     cursor: pointer
 
-    & > i
-      font-size: 1.2em
-      transition: all .3s
-
-    &.open
-      i
-        transform: rotate(90deg)
-
-      & + div
-        display: block
-
-  & > .hide-content
-    display: none
-    margin: 1.5rem 1.2rem
+  & > .toggle-content
+    margin: 30px 24px

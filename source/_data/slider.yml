@@ -23,3 +23,9 @@
   title: 回忆集
   description: 记录是一种生活
   button: 🍡详情
+- cover: https://img1.tianli0.top/qqbot/cover.webp
+  timeline: '2021-06-08'
+  link: /2021/06/08/qqbot/
+  title: 使用go-cqhttp搭建一个属于自己的机器人
+  description: ATRI—BOT
+  button: 🍡详情

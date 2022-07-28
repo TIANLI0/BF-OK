@@ -4,9 +4,9 @@ hexo.extend.filter.register('before_generate', () => {
   // Get first two digits of the Hexo version number
   const hexoVer = hexo.version.replace(/(^.*\..*)\..*/, '$1')
 
-  if (hexoVer < 5) {
-    logger.error('Please update Hexo to V5.0.0 or higher!')
-    logger.error('請把 Hexo 升級到 V5.0.0 或更高的版本！')
+  if (hexoVer < 5.3) {
+    logger.error('Please update Hexo to V5.3.0 or higher!')
+    logger.error('請把 Hexo 升級到 V5.3.0 或更高的版本！')
     process.exit(-1)
   }
 
@@ -18,10 +18,4 @@ hexo.extend.filter.register('before_generate', () => {
       process.exit(-1)
     }
   }
-
-  // let stylus to get the hexo highlight config
-  const themeConfig = hexo.theme.config
-  const hexoConfig = hexo.config
-  themeConfig.highlight_settings = hexoConfig.highlight
-  themeConfig.prismjs_settings = hexoConfig.prismjs
 })

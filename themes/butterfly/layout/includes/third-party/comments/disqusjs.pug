@@ -1,4 +1,3 @@
-- let disqusjsApi = theme.disqusjs.api || 'https://disqus.skk.moe/disqus/'
 - let disqusjsPageTitle = page.title.replace(/'/ig,"\\'")
 
 script.
@@ -6,38 +5,43 @@ script.
     function addDisqusjsCSS () {
       const ele = document.createElement('link')
       ele.rel = 'stylesheet'
-      ele.href= '!{url_for(theme.CDN.disqusjs_css)}'
+      ele.href= '!{url_for(theme.asset.disqusjs_css)}'
       document.getElementsByTagName('head')[0].appendChild(ele)
     }
 
     function initDisqusjs () {
-      window.DISQUS = null
-      new DisqusJS({
+      window.disqusjs = null
+      disqusjs = new DisqusJS(Object.assign({
         shortname: '!{theme.disqusjs.shortname}',
-        siteName: '!{theme.disqusjs.siteName}',
-        identifier: '!{ page.path }',
+        identifier: '!{ url_for(page.path) }',
         url: '!{ page.permalink }',
         title: '!{ disqusjsPageTitle }',
-        api: '!{disqusjsApi}',
         apikey: '!{theme.disqusjs.apikey}',
-        nocomment: '!{theme.disqusjs.nocomment}',
-        admin: '!{theme.disqusjs.admin}',
-        adminLabel: '!{theme.disqusjs.adminLabel}'
-      });
+      },!{JSON.stringify(theme.disqusjs.option)}))
+
+      disqusjs.render(document.getElementById('disqusjs'))
     }
 
-    window.disqusReset = initDisqusjs
+    const themeChange = () => {
+      const ele = document.getElementById('disqus_thread')
+      if(!ele) return
+      disqusjs.destroy()
+      initDisqusjs()
+    }
+
+
+    document.getElementById('darkmode').addEventListener('click', themeChange)
 
     if (window.disqusJsLoad) initDisqusjs()
     else {
       addDisqusjsCSS()
-      getScript('!{url_for(theme.CDN.disqusjs)}').then(initDisqusjs)
+      getScript('!{url_for(theme.asset.disqusjs)}').then(initDisqusjs)
       window.disqusJsLoad = true
     }
   }
 
   if ('!{theme.comments.use[0]}' === 'Disqusjs' || !!{theme.comments.lazyload}) {
-    if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('disqus_thread'), loadDisqusjs)
+    if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('disqusjs'), loadDisqusjs)
     else loadDisqusjs()
   }
   else {

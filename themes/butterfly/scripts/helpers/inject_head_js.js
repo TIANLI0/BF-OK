@@ -6,7 +6,11 @@
 'use strict'
 
 hexo.extend.helper.register('inject_head_js', function () {
-  const { darkmode, aside, change_font_size } = this.theme
+  const { darkmode, aside } = this.theme
+
+  const { theme_color } = hexo.theme.config
+  const themeColorLight = theme_color && theme_color.enable && theme_color.meta_theme_color_light || '#ffffff'
+  const themeColorDark = theme_color && theme_color.enable && theme_color.meta_theme_color_dark || '#0d0d0d'
 
   const localStore = `
     win.saveToLocal = {
@@ -62,13 +66,13 @@ hexo.extend.helper.register('inject_head_js', function () {
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '${themeColorDark}')
         }
       }
       win.activateLightMode = function () {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '${themeColorLight}')
         }
       }
       const t = saveToLocal.get('theme')
@@ -131,15 +135,14 @@ hexo.extend.helper.register('inject_head_js', function () {
     `
   }
 
-  let changFontAside = ''
-  if (change_font_size) {
-    changFontAside = `
-    const fontSizeVal = saveToLocal.get('global-font-size')
-    if (fontSizeVal !== undefined) {
-      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+  const detectApple = `
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
     }
+    detectApple()
     `
-  }
 
-  return `<script>(win=>{${localStore + getScript + darkmodeJs + asideStatus + changFontAside}})(window)</script>`
+  return `<script>(win=>{${localStore + getScript + darkmodeJs + asideStatus + detectApple}})(window)</script>`
 })

@@ -1,12 +1,13 @@
 ---
 title: 留言板
+aside: false
 ---
 
 <link rel="stylesheet" href="/css/commentsbar.css"/>
 
   <div id="computer">
     <div id="maincontent"><br>
-      <div id="form-wrap"><img src="https://cdn.jsdelivr.net/gh/Akilarlxh/Valine-Admin@v1.0/source/img/before.png" id="beforeimg">
+      <div id="form-wrap"><img src="https://cdn1.tianli0.top/gh/Akilarlxh/Valine-Admin@v1.0/source/img/before.png" id="beforeimg">
         <div id="envelope">
           <form>
             <div class="formmain">
@@ -28,7 +29,7 @@ title: 留言板
               </div>
             </div>
           </form>
-        </div><img id="afterimg" src="https://cdn.jsdelivr.net/gh/Akilarlxh/Valine-Admin@v1.0/source/img/after.png">
+        </div><img id="afterimg" src="https://cdn1.tianli0.top/gh/Akilarlxh/Valine-Admin@v1.0/source/img/after.png">
       </div>
     </div>
   </div>

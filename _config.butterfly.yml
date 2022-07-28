@@ -1,3 +1,16 @@
+#特别注意，配置文件请注意参考butterfly官方文档
+#引入的cdn链接不了解千万不要动，否则会导致页面加载不正常
+
+
+
+
+
+
+
+font-family: "HarmonyOS_Medium" # medium 用户自己替换成"HarmonyOS_Medium，下面都同理"
+
+# 喜欢中英文统一字体的同学可以忽略下面
+code-font-family: Consolas,"HarmonyOS_Medium",system-ui,-apple-system,BlinkMacSystemFont,serif 
 # Main menu navigation (導航目錄)
 # --------------------------------------
 
@@ -7,26 +20,24 @@
 #   name || link || icon
 
 menu:
-   主页: / || fas fa-home
+   主页: / || icon-shouye
   # Archives: /archives/ || fas fa-archive
   #Tags: /tags/ || fas fa-tags
-   相册: /gallery/ || fas fa-images
+   相册: /gallery/ || icon-daichuli
   # Categories: /categories/ || fas fa-folder-open
-   实验室||fas fa-bug:
-      网站统计: /census/ || fas fa-poll
-      免费图床: https://img2.tianli0.top || fas fa-images
-      Music: https://music.tianli0.top|| fas fa-music
-      网易云音乐api: https://music.api.tianli0.top|| fas fa-music
-      时光邮局: https://mail.tianli0.top/ || fas fa-envelope
-      随机动漫壁纸: https://img.api.tianli0.top || fas fa-images
-      一言: https://y.tianli0.top || fas fa-code
-      套壳网盘: https://cloud.tianli0.top || fas fa-cloud
-      天翼网盘直链: https://ty.tianli0.top || fas fas fa-cloud-download-alt
-   友情链接: /link/ || fas fa-link
-   朋友圈: /fcircle/ || fa fa-puzzle-piece
-   留言板: /comments/ || fas fa-comments
-   说说: /bber/ || fas fa-comment
-   关于: /About/ || fas fa-heart
+   实验室|| icon-faxian:
+      JSD-CDN: https://cdn1.tianli0.top|| icon-yingyin
+      网易云音乐api: https://music.api.tianli0.top|| icon-bofang
+      随机动漫壁纸: https://img.api.tianli0.top || icon-qiehuan
+      RSSHUB: https://rss.tianli0.top/ || icon-fenxiang
+      e5续订: https://e5.tianli0.top/ || icon-zixun1
+   友情链接|| icon-ziliaofenxiang:
+      朋友圈: /fcircle/ || icon-zixun
+      友链: /link/ || icon-pingtai
+   留言|| icon-jihua:
+      留言板: /comments/ || icon-bianqian
+      说说: /bb/ || icon-xiaoxi
+   关于: /About/ || icon-gerenziliao
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: true
@@ -52,10 +63,10 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/Tianli0 || Github
-  fas fa-envelope: mailto:507249007@qq.com || Email
-  fas fa-rss: https://tianli-blog.club/atom.xml || RSS
-  fas fa-users-cog: https://hpp.tianli.workers.dev/hpp/admin/dash/home || Admin
+  Github: https://github.com/Tianli0 || fab fa-github
+  Email: mailto:507249007@qq.com || far fa-envelope
+  RSS: https://tianli-blog.club/atom.xml || fa fa-rss
+  Admin: https://hpp.tianli0.top/ || fa fa-cogs
 
 # search (搜索)
 # --------------------------------------
@@ -64,7 +75,7 @@ social:
 algolia_search:
   enable: false
   hits:
-    per_page: 6
+    per_page: 7
 
 # Local search
 local_search:
@@ -100,22 +111,22 @@ avatar:
   effect: false
 
 # The banner image of home page
-index_img: https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images&method=zsy
+index_img: https://api.moechu.cn/?s=App.Bing.Getone
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images&method=zsy
+default_top_img: https://api.moechu.cn/?s=App.Bing.Getone
 
 # The banner image of archive page
 archive_img: https://img1.tianli0.top/background.png
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images&method=zsy
+tag_img: 
 
-# The banner image of tag page
+# The banner image of tag page测试
 # format:
 #  - tag name: xxxxx
-tag_per_img: https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images&method=zsy
+tag_per_img: 
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
@@ -124,7 +135,7 @@ category_img:
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images&method=zsy
+category_per_img: 
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -137,6 +148,7 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
      - https://img.api.tianli0.top
+
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -216,16 +228,16 @@ photofigcaption: true
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 250 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 此文章已经有
+  message_next: 天没有更新了，某些内容或许已经过时了，如需要技术支持，请在评论区留言所需问题！
 
 # Share System (分享功能)
 # --------------------------------------
@@ -252,16 +264,15 @@ addtoany:
 # --------------------------------------
 
 comments:
-  # Up to two comments system, the first will be shown as default
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-  - Twikoo
-  - Waline
+    - Twikoo
+  # - Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: false # Display comment count in top_img
+  count: false # Display comment count in post's top_img
+  card_post_count: true # Display comment count in Home Page
 
 # disqus
 # https://disqus.com/
@@ -319,12 +330,7 @@ valine:
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
-waline:
-  serverURL: https://waline.tianli-blog.club 
-  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  emojiCDN: # emoji CDN
-  bg: /image/comment_bg.png # waline background
-  option:
+
 
 # utterances
 # https://utteranc.es/
@@ -358,7 +364,7 @@ twikoo:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -372,8 +378,8 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-  enable: true
-  public_key: kovicgiwccdfvut03jfg6nutf5xh92k8
+  enable: false
+  public_key: 
 
 # daovoice
 # http://daovoice.io/
@@ -395,11 +401,12 @@ crisp:
 
 # Footer Settings
 # --------------------------------------
+#页脚
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text: <p><a style="margin-inline:5px"target="_blank"href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo"title="博客框架为Hexo"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender"title="主题采用butterfly"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://now.sh"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel"title="本站使用部署于Vercel"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub"title="本站项目由Gtihub托管"alt="img"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"alt="img"title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p><div class="moe"></a><a href="https://icp.gov.moe" target="_blank"></a>萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20212003" target="_blank"></a> 20212003号</a><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="http://beian.miit.gov.cn/"><span class="icp" >蜀ICP备2021012046号-1</span></a></div>
+    since: 2021
+  custom_text: <p><a style="margin-inline:5px"target="_blank"href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo"title="博客框架为Hexo"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender"title="主题采用butterfly"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://now.sh"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel"title="本站使用部署于Vercel"alt="img"></a><a style="margin-inline:5px"target="_blank"href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub"title="本站项目由Gtihub托管"alt="img"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"alt="img"title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.12377.cn/"><span class="icp" >互联网违法信息举报中心</span><a target="_blank" rel="noopener external nofollow noreferrer" href="http://beian.miit.gov.cn/"><span class="icp" >蜀ICP备2021012046号-1</span></a></div>
   copyright: false # Copyright of theme and framework
 
 # Analysis
@@ -427,7 +434,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: 54rgo8puod
+microsoft_clarity:
 
 # Advertisement
 # --------------------------------------
@@ -451,19 +458,19 @@ google_adsense:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification: fksUAflEgjQk36HERAXC5Uzwhoo7YJxSGeD2RJ2YqL0
+google_site_verification: 
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
-bing_site_verification: 16C86926259CFBE362B21169927AA958
+bing_site_verification: 
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
-baidu_site_verification: 6e4Y7vFHFw
+baidu_site_verification: 
 
 # 360 Webmaster tools verification setting
 # see http://zhanzhang.so.com/
-qihu_site_verification: 568faee8bd1e517db77c025cef8999a8
+qihu_site_verification: 
 
 # Yandex Webmaster tools verification setting
 # see https://webmaster.yandex.com/
@@ -645,12 +652,12 @@ aside:
     description:
     button:
       enable: true
-      icon: fas fa-andriod
+      icon: iconfont icon-coolapk
       text: 关注
       link: http://www.coolapk.com/u/1382033
   card_announcement:
     enable: true
-    content: 欢迎来到萌新的博客<br>此网站开源<a href="https://github.com/TIANLI0/BF-OK">仓库</a><br><a href="https://music.api.tianli0.top">提供网易云音乐API</a><br><img src="https://img.shields.io/badge/dynamic/json?labelColor=11ab60&color=282c34&label=%E9%85%B7%E5%AE%89%20Coolapk&suffix=%20fans&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D1382033&logo=data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxkZWZzPjxzdHlsZS8+PC9kZWZzPjxwYXRoIGQ9Ik0xMjcuODkzIDQyNi42NjdjMjkuOTItNjYuOTg3IDk0LjUwNy0xMTYuNjk0IDE2Ni40LTEzMC4zNDcgNTUuNzg3LTkuNiAxMTIuOTYgNS4wNjcgMTYxLjkyIDMxLjk0N0M0OTcuNzYgMzQ5LjQ0IDUzNC40IDM3OC44OCA1NjcuOTQ3IDQxMS4wNGMtMTYuMTYgMTguNC0zOS4wOTQgMjguODUzLTU3LjQ5NCA0NC43NDctNDYuMTMzLTM4Ljg4LTk2LjY0LTc3LjcwNy0xNTcuOTczLTg3LjA5NC03OC45MzMtMTMuMTczLTE1OC41NiA0OS4yMjctMTcwLjUwNyAxMjcuMTQ3LTguNjkzIDQ1LjkyIDEwLjEzNCA5NC42NjcgNDUuMTc0IDEyNC45MDcgMzkuNjggMzQuOTg2IDk3LjIyNiA0NC41ODYgMTQ3LjYyNiAzMS4yNTMgNTcuNi0xMy45MiAxMDEuOTc0LTU3LjA2NyAxMzYuODU0LTEwMi43NzMgNTQuMDgtNzIuMTA3IDk5LjItMTUwLjQgMTQ3Ljg0LTIyNi4xMzQgMTMuOTItMTkuMTQ2IDQ3LjQxMy0xNy4yMjYgNTguNzIgMy44NCA2My42MjYgMTA5LjAxNCAxMjYuMDggMjE4LjcyIDE4OS42IDMyNy43ODcgNy41NzMgMTUuMDkzIDQuNDI2IDM1Ljc4Ny05LjYgNDYuMTMzLTEzLjA2NyAxMC42MTQtMzMuMzM0IDEwLjI0LTQ2LjEzNC0uNjkzYTk3MDY2LjU1OCA5NzA2Ni41NTggMCAwMS0yMjYuMTg2LTE2Mi43MmMxOC44OC0xNS4wNCAzOC40LTI5LjMzMyA1Ny45NzMtNDMuNDY3IDIzLjczMyAxMi45MDcgNDMuNzg3IDMzLjE3NCA2OS42IDQxLjY1NC0yMC4zNzMtMzkuNTc0LTQzLjYyNy03Ny43MDctNjYuMzQ3LTExNS45NDctNDIuNjY2IDU5LjE0Ny03Ny4wNjYgMTI0LjIxMy0xMjMuMTQ2IDE4MS4wNjdDNTE2IDY2My40NjcgNDQ4LjggNzE2Ljk2IDM2OC42NCA3MjguNDhjLTM4Ljg4IDMuNDEzLTc5LjMwNyA0LjIxMy0xMTYuMzczLTkuOTczLTUzLjQ5NC0xOS4xNDctMTAwLjMyLTU4LjcyLTEyNC41ODctMTEwLjU2LTI4LjIxMy01Ni4xMDctMjYuNzczLTEyNS4wMTQuMjEzLTE4MS4yOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=&longCache=true)](https://api.spencerwoo.com/substats/?source=coolapk&queryKey=1382033" />
+    content: 欢迎来到萌新的博客<br>此网站开源<a href="https://github.com/TIANLI0/BF-OK">仓库</a><br><a href="https://music.api.tianli0.top">提供网易云音乐API</a><br><img src="https://img.shields.io/badge/dynamic/json?labelColor=11ab60&color=282c34&label=%E9%85%B7%E5%AE%89%20Coolapk&suffix=%20fans&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D1382033&logo=data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxkZWZzPjxzdHlsZS8+PC9kZWZzPjxwYXRoIGQ9Ik0xMjcuODkzIDQyNi42NjdjMjkuOTItNjYuOTg3IDk0LjUwNy0xMTYuNjk0IDE2Ni40LTEzMC4zNDcgNTUuNzg3LTkuNiAxMTIuOTYgNS4wNjcgMTYxLjkyIDMxLjk0N0M0OTcuNzYgMzQ5LjQ0IDUzNC40IDM3OC44OCA1NjcuOTQ3IDQxMS4wNGMtMTYuMTYgMTguNC0zOS4wOTQgMjguODUzLTU3LjQ5NCA0NC43NDctNDYuMTMzLTM4Ljg4LTk2LjY0LTc3LjcwNy0xNTcuOTczLTg3LjA5NC03OC45MzMtMTMuMTczLTE1OC41NiA0OS4yMjctMTcwLjUwNyAxMjcuMTQ3LTguNjkzIDQ1LjkyIDEwLjEzNCA5NC42NjcgNDUuMTc0IDEyNC45MDcgMzkuNjggMzQuOTg2IDk3LjIyNiA0NC41ODYgMTQ3LjYyNiAzMS4yNTMgNTcuNi0xMy45MiAxMDEuOTc0LTU3LjA2NyAxMzYuODU0LTEwMi43NzMgNTQuMDgtNzIuMTA3IDk5LjItMTUwLjQgMTQ3Ljg0LTIyNi4xMzQgMTMuOTItMTkuMTQ2IDQ3LjQxMy0xNy4yMjYgNTguNzIgMy44NCA2My42MjYgMTA5LjAxNCAxMjYuMDggMjE4LjcyIDE4OS42IDMyNy43ODcgNy41NzMgMTUuMDkzIDQuNDI2IDM1Ljc4Ny05LjYgNDYuMTMzLTEzLjA2NyAxMC42MTQtMzMuMzM0IDEwLjI0LTQ2LjEzNC0uNjkzYTk3MDY2LjU1OCA5NzA2Ni41NTggMCAwMS0yMjYuMTg2LTE2Mi43MmMxOC44OC0xNS4wNCAzOC40LTI5LjMzMyA1Ny45NzMtNDMuNDY3IDIzLjczMyAxMi45MDcgNDMuNzg3IDMzLjE3NCA2OS42IDQxLjY1NC0yMC4zNzMtMzkuNTc0LTQzLjYyNy03Ny43MDctNjYuMzQ3LTExNS45NDctNDIuNjY2IDU5LjE0Ny03Ny4wNjYgMTI0LjIxMy0xMjMuMTQ2IDE4MS4wNjdDNTE2IDY2My40NjcgNDQ4LjggNzE2Ljk2IDM2OC42NCA3MjguNDhjLTM4Ljg4IDMuNDEzLTc5LjMwNyA0LjIxMy0xMTYuMzczLTkuOTczLTUzLjQ5NC0xOS4xNDctMTAwLjMyLTU4LjcyLTEyNC41ODctMTEwLjU2LTI4LjIxMy01Ni4xMDctMjYuNzczLTEyNS4wMTQuMjEzLTE4MS4yOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=&longCache=true)](https://api.spencerwoo.com/substats/?source=coolapk&queryKey=1382033" /><br><a href="https://tianli0.coding.net/p/blog/ci/job"><img alt="构建状态" src="https://tianli0.coding.net/badges/blog/job/967171/master/build.svg"></a>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -690,7 +697,7 @@ aside:
 busuanzi:
   site_uv: true
   site_pv: true
-  page_pv: true
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -802,8 +809,13 @@ artitalk:
 pjax:
   enable: false
   exclude:
-    # - xxxx
-    # - xxxx
+     - /bb/
+     - /fcircle/
+     - /About/
+     - /Mem/
+     - /Pansha/
+     - /love/
+     - /census/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -816,7 +828,7 @@ aplayerInject:
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: bottom-left
+  position: top-center
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
@@ -838,12 +850,23 @@ pangu:
 lazyload:
   enable: true
   post: https://img1.tianli0.top/loading.gif
+  blur: true
 
-#友链朋友圈
+# fcircle
+# see https://akilar.top/posts/8480b91c/
 fcircle:
-  enable: false #开关友链
-  apiurl: https://hexo-circle-of-friends-api.tianli0.vercel.app/api
-  # 改为冰老师原帖步骤三：配置 vercel api中获取的api链接
+  enable: false #控制开关
+  apiurl: https://hexo-circle-of-friends-api.tianli0.vercel.app/api #api地址
+  initnumber: 20 #【可选】页面初始化展示文章数量
+  stepnumber: 15 #【可选】每次加载增加的篇数
+  css: https://cdn1.tianli0.top/npm/hexo-filter-fcircle/assets/css/butterfly.min.css #【可选】开发者接口，自定义css链接
+  js: https://cdn1.tianli0.top/npm/hexo-filter-fcircle/assets/js/fcircle.min.js #【可选】开发者接口，自定义js链接
+  path: #【可选】fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html
+  front_matter: #【可选】fcircle页面的 front_matter 配置
+    title: 朋友圈
+    comments: false
+    top_img: transparent
+    aside: false
 
 # HexoPlusPlus Talk
 # see https://hexoplusplus.js.org
@@ -889,17 +912,30 @@ css_prefix: true
 inject:
   head:
      - <link rel="stylesheet" href="https://img1.tianli0.top/copyright.css">
+   #  - <link rel="stylesheet" href="https://img1.tianli0.top/statistic.js">
      - <link rel="stylesheet" href="https://img1.tianli0.top/background.css">
      - <link rel="stylesheet" href="https://img1.tianli0.top/expand.css">
      - <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+     - <link rel="stylesheet" href="https://at.alicdn.com/t/font_2594518_qp87patcpai.css">
+    # - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/static-butterfly/dist/css/index.min.css">
+     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/animate.css@4.1.1/animate.min.css" media="defer" onload="this.media='all'">
+     - <link rel="preconnect" href="https://s1.hdslb.com/">
+     - <link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" media="all" onload="this.media='all'">
+     - <link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/medium.css" media="all" onload="this.media='all'">
   bottom:
-      - <script src="https://img1.tianli0.top/expand.js"></script>
+      - <script src="/js/fun.js"></script>
+      - <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js"></script>
+      - <script src="https://img1.tianli0.top/statistic.js"></script>   
       - <script defer src="/live2d-widget/autoload.js"></script>
-      - <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      - <script src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script>
+      - <script src="https://cdn1.tianli0.top/npm/swiper/swiper-bundle.min.js"></script>
+      - <script src="https://cdn1.tianli0.top/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script>
       - <script src="/js/moments.js"></script>
-      - <script src="/js/timing.js"></script> 
       - <script src="/js/kernel.js"></script>
+      - <script defer src="https://cdn1.tianli0.top/gh/graingert/wow@1.3.0/dist/wow.min.js"></script>
+      - <script defer data-pjax src="/js/wow_init.js"></script>
+      - <script src="//at.alicdn.com/t/font_2594518_ny8r40yt7kk.js"></script>  #图标
+# 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
+flink_style: volantis # butterfly | volantis | flexcard
 #gitcalendar(已废弃方案)
 #gitcalendar:
   #enable: true
@@ -924,17 +960,15 @@ CDN:
   
   main: /js/main.js
   utils: /js/utils.js
-  vue: https://cdn.jsdelivr.net/npm/vue@2.6.11  # Veu.js依赖
+  vue: https://cdn1.tianli0.top/npm/vue@2.6.11  # Veu.js依赖
   card_clock: /js/card_clock.js  # 首页电子钟
-  fcircle: /js/fcircle.js #友链朋友圈
+  #fcircle: /js/fcircle.js #友链朋友圈
 
   # pjax
 
   # comments
- 
-  # share
-
-  # search
+  
+  
 
   # math
 
@@ -958,9 +992,13 @@ CDN:
 
   # Prism.js
 
-  artitalk: https://cdn.jsdelivr.net/npm/artitalk
+  artitalk: https://cdn1.tianli0.top/npm/artitalk
 
   # 首页轮播图
-  swiper_js: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js
-  swiper_css: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css
+  swiper_js: https://cdn1.tianli0.top/npm/swiper/swiper-bundle.min.js
+  swiper_css: https://cdn1.tianli0.top/npm/swiper/swiper.min.css
   swiper_init: /js/swiper_init.js
+
+  # 打赏按钮投币效果
+  coin_js: /js/coin.js
+  coin_css: /css/coin.css

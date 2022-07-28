@@ -2,15 +2,43 @@
 title: About
 date: 2021-01-01 00:00:00
 comments: false
-top_img: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/0563a50291696c4be98a004b51d91503.jpg
+top_img: false
+aside: false
 ---
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@main/privacy/privacy.js"></script>
+
+# 自我介绍
 
 **Hi,我是Tianli 欢迎来到我的个人博客**
 
-这是一个萌新的个人站点，会不定期发布一些有趣的文章
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=TIANLI0&show_icons=true&count_private=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-主要活跃于酷安
+欸、欸欸。是来认识Tianli的么......
 
+(好...好难为情)
+
+他现在似乎不在呢...就让咱简单介绍下吧
+
+- 在读高中生
+- 精通baidu编程，Google编程
+- 在学：
+  - kotlin Android
+- 更多的联系方式：
+  - [Mail](mailto:wutianli@tianli0.top)
+  - [Telegram](https://t.me/Tianli)
+
+欸欸欸欸欸，别老是盯着咱看阿！！~~~
+
+嗯，。就这些了，拜拜
+
+啊对了！饿饿！(Ov-')/
+
+{% raw %}
+<img src="https://img.shields.io/badge/dynamic/json?labelColor=11ab60&color=282c34&label=%E9%85%B7%E5%AE%89%20Coolapk&suffix=%20fans&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D1382033&logo=data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxkZWZzPjxzdHlsZS8+PC9kZWZzPjxwYXRoIGQ9Ik0xMjcuODkzIDQyNi42NjdjMjkuOTItNjYuOTg3IDk0LjUwNy0xMTYuNjk0IDE2Ni40LTEzMC4zNDcgNTUuNzg3LTkuNiAxMTIuOTYgNS4wNjcgMTYxLjkyIDMxLjk0N0M0OTcuNzYgMzQ5LjQ0IDUzNC40IDM3OC44OCA1NjcuOTQ3IDQxMS4wNGMtMTYuMTYgMTguNC0zOS4wOTQgMjguODUzLTU3LjQ5NCA0NC43NDctNDYuMTMzLTM4Ljg4LTk2LjY0LTc3LjcwNy0xNTcuOTczLTg3LjA5NC03OC45MzMtMTMuMTczLTE1OC41NiA0OS4yMjctMTcwLjUwNyAxMjcuMTQ3LTguNjkzIDQ1LjkyIDEwLjEzNCA5NC42NjcgNDUuMTc0IDEyNC45MDcgMzkuNjggMzQuOTg2IDk3LjIyNiA0NC41ODYgMTQ3LjYyNiAzMS4yNTMgNTcuNi0xMy45MiAxMDEuOTc0LTU3LjA2NyAxMzYuODU0LTEwMi43NzMgNTQuMDgtNzIuMTA3IDk5LjItMTUwLjQgMTQ3Ljg0LTIyNi4xMzQgMTMuOTItMTkuMTQ2IDQ3LjQxMy0xNy4yMjYgNTguNzIgMy44NCA2My42MjYgMTA5LjAxNCAxMjYuMDggMjE4LjcyIDE4OS42IDMyNy43ODcgNy41NzMgMTUuMDkzIDQuNDI2IDM1Ljc4Ny05LjYgNDYuMTMzLTEzLjA2NyAxMC42MTQtMzMuMzM0IDEwLjI0LTQ2LjEzNC0uNjkzYTk3MDY2LjU1OCA5NzA2Ni41NTggMCAwMS0yMjYuMTg2LTE2Mi43MmMxOC44OC0xNS4wNCAzOC40LTI5LjMzMyA1Ny45NzMtNDMuNDY3IDIzLjczMyAxMi45MDcgNDMuNzg3IDMzLjE3NCA2OS42IDQxLjY1NC0yMC4zNzMtMzkuNTc0LTQzLjYyNy03Ny43MDctNjYuMzQ3LTExNS45NDctNDIuNjY2IDU5LjE0Ny03Ny4wNjYgMTI0LjIxMy0xMjMuMTQ2IDE4MS4wNjdDNTE2IDY2My40NjcgNDQ4LjggNzE2Ljk2IDM2OC42NCA3MjguNDhjLTM4Ljg4IDMuNDEzLTc5LjMwNyA0LjIxMy0xMTYuMzczLTkuOTczLTUzLjQ5NC0xOS4xNDctMTAwLjMyLTU4LjcyLTEyNC41ODctMTEwLjU2LTI4LjIxMy01Ni4xMDctMjYuNzczLTEyNS4wMTQuMjEzLTE4MS4yOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=&longCache=true)](https://api.spencerwoo.com/substats/?source=coolapk&queryKey=1382033" /><img src="https://img.shields.io/badge/dynamic/json?labelColor=FE7398&label=bilibili%20fans&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D283172250&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAD7ElEQVR4nO2dW9WrMBCFK6ESkFAJSKiESqgEHCABCZWAhEpAAhL2ecik5dDc/pXLBDLfWnlqy0xmJ5BMQnq5CIIgCIIgCIIgCIIgCEIBAHQAemYfrgCunD6wAKAHsEKxALgx+bCQD8/S9tmgVqeDr1lLigDgZvDhXso+K9TyTBQRwRJ8AHjntl0Flh5QRAQK/mKxPeayWx2OXpBNBKiHvi34b7T2MC4pAvW6twR/RwkRKPizBN8CgEcuESj4Lwm+BwBjahEk+H8EwJRKhOaCDzW8e1JLfkUUH1NgmR3XmHffHR1l+72BSs8d7w8U+JDAnZERQMcV+CtUi7dNqFqibB4J7vtrq7xKCuAasbTMXCL4T+5aVk6+2xHUrWdhruAR6HIJcOeu2UHI8zyAe2ytWfEdWz9PVvQ8YAmIQ5dDAB9LFsMVAv8oMO2zAGrC5WNIarRiAuKR9jYEd9pY08aa6uUzIHGRdkgKd8pY0yc1WjEBAqypDYoAG0QAZkQAZkQAZkQAZk4vANQenjsSzS3I/wcSbXU5jQBUkRtdf4Rar90v8kSv3+I3ffCCSpk8I/w+lgDkdI/v2rEp2CaiWm1AsDQLlDAD+dlFXLMeAaCSeLZdaSFE5VUQNot38cKuEeBgAsSuG0flVZBmEanbXfNQAsS0fgBYIn2fIu3/BBMHEyBmDXlFfA8IzeHb+Ems4WAChKykrVA9ZfsQTL57jXzRg4A5wC/A8N4ADiZAZwm2XjW75Qh2KOTfA0p4kygPw28OJcCVgn3nDnYo2EwEYRgGH0qAMyICMCMCMCMCMCMCMCMCMCMCfP3qwHDOQ4AAUekTk8FaBRihJnZdYbvtCGC7LvmkM63GjVDINPFrQgCq5ETXfmMzI90FXzPvfqt7x4rEu/ZaEcCUxFvgz2zO+BUn6UkoaEEAsptiMSX5e8FoRYCN7cVgb4Vq7U/H50Pq4JNP7Qiw8UFnJwcK+tXy+Wj6PLEvPgHSHv5UgwA1IQIwwyFAyLJin9RoxYgAzAQIkPwNmf26busC+OIx5TDqo5nDT+F/SS/9CYzwb+No49zNy2evkYv0LywGGAXUvp6eSneycqOic0w20k7CNgKE7jJunSGLACTCxF27ylmQc98T5MQUH49swd+I0HPXslLKnT0N+wnkrTKi9JZL/L9i1SorMmdeQ4TQQ7OFMxIMzGD45w8nUL1im7efENZLJpgPSw0pfz0cdt4U3230Td/Tvx2R6d2FrHhEWLkq5PELOMsRPHCPnAZGv1xJteL7jbJiaW3sB2nDvPC/osSYvjRQz4cJ6n7KO3rYQL7M+L6nVtfDVRAEQRAEQRAEQRAEIZ5/SAXmdfXaoQsAAAAASUVORK5CYII=&color=282c34&longCache=true" />
+{% endraw %}
 因为所有项目迁移至了coding,所以github现在一片空白啦
 
 ![Tianli0](https://count.getloli.com/get/@:Tianli0)
@@ -19,158 +47,21 @@ top_img: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/0563a50291696c4
 
 ------
 
+# 统计信息
+
+| 类型<div style="width:100px"> | 信息                              |
+| ----------------------------- | --------------------------------- |
+| IP地址                        | <div id="userAgentIp"></div>      |
+| 国家                          | <div id="userAgentCountry"></div> |
+| 省份                          | <div id="userAgentRegion"></div>  |
+| 城市                          | <div id="userAgentCity"></div>    |
+| 运营商                        | <div id="userAgentIsp"></div>     |
+| 设备                          | <div id="userAgentDevice"></div>  |
+
+
+------
+
 {% btn 'https://www.coolapk.com/u/1382033',酷安,far fa-hand-point-right,green larger %} {% btn 'https://github.com/Tianli0',Github,far fa-hand-point-right,pink larger %} {% btn 'https://www.realmebbs.com/user/464226661/posts',realme社区,far fa-hand-point-right,orange larger %}{% btn 'https://stats.uptimerobot.com/9GJ5lsmJ07',网站监控,far fa-hand-point-right,orange larger %}
 
-------
+<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/a-list-%E5%9B%BD%E9%99%85%E6%B5%81%E8%A1%8C/pl.5ee8333dbe944d9f9151e97d92d1ead9"></iframe>
 
-# CC许可协议
-
-为了保持文章质量，并保持互联网的开放共享精神，保持页面流量的稳定，综合考虑下本站的所有原创文章均采用cc协议中比较严格的[署名-非商业性使用-禁止演绎 4.0 国际](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)标准。这篇文章主要想能够更加清楚明白的介绍本站的协议标准和要求。方便您合理的使用本站的文章。
-
-## 博客的分类介绍
-
-原创内容的非商用转载必须为完整转载且标注出处的**带有超链接功能的完整url链接**（**需能点击**）或`访问原文`之类字样的超链接。
-
-**转载内容**为转载内容，均标注了出处。建议使用原链接打开，尊重原作者。所有转载内容尽可能为完整转载（如果有部分内容有问题可能会由部分删减和补充）并进行样式调整以适合本博客。如果转载该部分内容需要联系原作者。
-
-## 你可以做什么？
-
-只要您遵守本页的许可，您可以自由地共享文章的内容 — 在任何媒介以任何形式复制、发行本作品。并且无需通知作者。
-
-## 你需要遵守什么样的许可？
-
-### 署名
-
-您必须标注内容的来源，标注方式取决于您的共享形式：
-
-- 分享全部内容（无修改）
-  您需要在文章开头部分（或者明显位置）标注原文章链接（建议使用超链接）
-- 分享部分截取内容或者衍生创作
-
-### 禁止商用
-
-本站内容免费向互联网所有用户提供，分享本站文章时禁止商业性使用、禁止在转载页面中插入广告（例如谷歌广告、百度广告）。
-
-## 什么内容会被版权保护
-
-包括但不限于：
-
-- 文章封面图片
-- 文章标题和正文
-- 站点图片素材（不含主题自带素材）
-
-## 例外情况
-
-本着友好互相进步的原则，被本站友链收录的博客允许博客文章内容的衍生品的分享和分发，但仍需标注出处。
-
-本着互联网开放精神，您可以在博客文章下方留言要求授权博文的衍生品的分享和分发，标注您的网站地址。
-
-------
-
-# Cookies政策
-
-## Cookies
-
-我使用Cookies来保持我的网站和我开发的软件的可靠性，安全性和个性化。当您接受Cookies时，这有助于通过我识别您的身份、记住您的偏好、或提供个性化用户体验来帮助我改善网站。
-
-本政策应与我的隐私政策一起阅读，该隐私政策解释了我如何使用个人信息。
-
-如果您对我使用您的个人信息或Cookies的方式有任何疑问，请通过`wutianli@tianli0.top`与我联系。
-
-如果您想管理您的Cookies，请按照下面“如何管理Cookies”部分中的说明进行操作。
-
-## 什么是Cookies？
-
-Cookies是一种小型文本文件，当您访问网站时，网站可能会将这些文件放在您的计算机或设备上。Cookies会帮助网站或其他网站在您下次访问时识别您的设备。网站信标、像素或其他类似文件也可以做同样的事情。我在此政策中使用术语“Cookies”来指代以这种方式收集信息的所有文件。
-
-Cookies提供许多功能。例如，他们可以帮助我记住您喜欢深色模式还是浅色模式，分析我网站的效果。
-
-大多数网站使用Cookies来收集和保留有关其访问者的个人信息。大多数Cookies收集一般信息，例如访问者如何到达和使用我的网站，他们使用的设备，他们的互联网协议地址（IP地址），他们正在查看的页面及其大致位置（例如，我将能够认识到您正在从北京访问我的网站）。
-
-## Cookies的目的
-
-我将Cookies分为以下类别:
-
-| 用途                 | 说明                                                         |
-| -------------------- | ------------------------------------------------------------ |
-| 授权                 | 您登录我的网站时，我可通过 Cookie 提供正确信息，为您打造个性化的体验。例如：Cookie会告知您通过搜索引擎搜索的具体内容来改善文章的标题优化关键词、或者创建更符合您搜索需求的文章内容。 |
-| 安全措施             | 我通过 Cookie 启用及支持安全功能，监控和防止可疑活动、欺诈性流量和违反版权协议的行为。 |
-| 偏好、功能和服务     | 我使用功能性Cookies来让我记住您的偏好，或保存您向我提供的有关您的喜好或其他信息。 |
-| 个性化广告           | 本站及所属软件没有个性化广告                                 |
-| 网站性能、分析和研究 | 我使用这些cookie来监控网站性能。这使我能够通过快速识别和解决出现的任何问题来提供高质量的体验。 |
-
-## 我的网站上的第三方Cookies
-
-我还在我的网站上使用属于上述类别的第三方Cookies，用于以下目的：
-
-- 帮助我监控网站上的流量；
-- 识别欺诈或非人为性流量；
-- 协助市场调研；
-- 改善网站功能；
-- 监督我的版权协议和隐私政策的遵守情况。
-
-| 第三方服务商          | 用途                                                       |
-| --------------------- | ---------------------------------------------------------- |
-| baidu.com             | 用于统计站内访问情况，进行针对性优化                       |
-| ibruce.info           | busuznzi统计，用于区分访问pv数量和uv数量，在文章处展示人气 |
-| clarity.microsoft.com | 对于用户进行分析，网站统计                                 |
-
-## 如何管理Cookies？
-
-在将Cookie放置在您的计算机或设备上之前，系统会显示一个弹出窗口，要求您同意设置这些Cookie。通过同意放置Cookies，您可以让我为您提供最佳的体验和服务。如果您愿意，您可以通过浏览器设置关闭本站的Cookie来拒绝同意放置Cookies；但是，我网站的部分功能可能无法完全或按预期运行。您有机会允许和/或拒绝使用Cookie。您可以通过访问浏览器设置随时返回到您的Cookie偏好设置以查看和/或删除它们。
-
-除了我提供的控件之外，您还可以选择在Internet浏览器中启用或禁用Cookie。大多数互联网浏览器还允许您选择是要禁用所有Cookie还是仅禁用第三方Cookie。默认情况下，大多数互联网浏览器都接受Cookie，但这可以更改。有关详细信息，请参阅Internet浏览器中的帮助菜单或设备随附的文档。
-
-以下链接提供了有关如何在所有主流浏览器中控制Cookie的说明：
-
-[Google Chrome](https://support.google.com/chrome/answer/95647?hl=en)
-[IE](https://support.microsoft.com/en-us/help/260971/description-of-cookies)
-[Safari（桌面版）](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
-[Safari（移动版）](https://support.apple.com/en-us/HT201265)
-[火狐浏览器](https://support.mozilla.org/en-US/kb/Cookies-information-websites-store-on-your-computer)
-[Android浏览器](http://support.google.com/ics/nexus/bin/answer.py?hl=en&answer=2425067)
-
-如您使用其他浏览器，请参阅浏览器制造商提供的文档。
-有关Cookies以及如何管理Cookies的更多信息，请访问：
-
-wikipedia.org 、 [www.allaboutCookies.org](http://www.allaboutcookies.org/) 或 [www.aboutCookies.org](http://www.aboutcookies.org/)
-
-## 更多信息
-
-有关我数据处理的更多信息，请参阅隐私政策。如果您对此Cookie政策有任何疑问，请通过`wutianli@tianli0.top`与我联系。
-
-## 对此Cookie政策的更改
-
-我可能对此Cookie政策所做的任何更改都将发布在此页面上。如果更改很重要，我会在我的主页或应用上明确指出该政策已更新。
-
-# 隐私政策
-
-本站非常重视用户的隐私和个人信息保护。您在使用网站时，可能会收集和使用您的相关信息。通过《隐私政策》向您说明在您访问 `https://tianli-blog.club/` 网站时，如何收集、使用、保存、共享和转让这些信息。
-
-## 一、如何收集和使用您的个人信息
-
-网络身份标识信息（浏览器UA、IP地址）、您的地理位置信息（具体到城市）、电子邮件地址。
-
-在您访问时，仅会处于以下目的，使用您的个人信息：
-
-- 百度/谷歌统计工具会收集您的访问信息，用于网站的优化与文章分类（被动，存储，定期清理）
-
-在您评论时，仅会出于以下目的，收集和使用您的个人信息：
-
-- 评论时会记录您的qq号（如果在邮箱位置填写qq邮箱或qq号），方便获取您的qq头像（主动，存储）
-- 评论时会记录您的邮箱，当我回复后会通过邮件通知您（主动，存储，不会公开邮箱）
-- 评论时会记录您的IP地址，作为反垃圾的用户判别依据（被动，存储，不会公开IP）
-- 评论会记录您的浏览器代理，用作展示系统版本、浏览器版本方便展示您使用的设备，快速定位问题（被动，存储）
-
-
-
-## 二、如何使用 Cookies 和本地 LocalStorage 存储
-
-本站为实现无账号评论、深色模式切换，不蒜子的uv统计等功能，会在您的浏览器中进行本地存储，您可以随时清除浏览器中保存的所有 Cookies 以及 LocalStorage。
-
-关于如何使用您的Cookies，请查看Cookies政策。
-
-## 三、如何共享、转让您的个人信息
-
-不会与任何公司、组织和个人共享您的个人信息
-不会将您的个人信息转让给任何公司、组织和个人

@@ -14,4 +14,5 @@ comments: false
 
 ### 以上的图片均已加入随机壁纸api
 
-{% btn 'https://img.api.tianli0.top',随机壁纸api链接,far fa-hand-point-right,block center larger %}
+{% btn 'https://img.api.tianli0.top',随机壁纸api链接,far fa-hand-point-right,block center larger %}top_img: transparent
+

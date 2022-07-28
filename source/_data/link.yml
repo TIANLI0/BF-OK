@@ -1,22 +1,31 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: Xiayu
-      link: https://www.cloudkerz.com/
-      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/link1.png
-      descr: 一个腾飞云上的小站
     - name: Strit
-      link: https://strit.top
-      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/link2.jpg
+      link: https://st.tianli0.top
+      avatar: https://img1.tianli0.top/link2.jpg
       descr: 一个爱拍照的小loli的站点
     - name:  GamerNoTitle
       link: https://bili33.top/
       avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png
       descr: 一个在懵懂无知中成长的高中生程序员^V^
+    - name: 山岳库博
+      link: https://kmar.top/
+      avatar: https://npm.elemecdn.com/@kmar/fonts/avatar/own.jpg
+      descr: 开发学习启发性二刺螈
+#siteshot: https://npm.elemecdn.com/@kmar/fonts/sc/own.jpg
     - name:  Radium·Stardust
       link: https://radiumbit.tk/
       avatar: https://cdn.jsdelivr.net/gh/radium-bit/res@latest/avatar.webp
       descr: Always believe that good things are about to happen.
+    - name: Harry の 心阁
+      link: https://u.mr90.top
+      avatar: /admin/qqavatar.jpeg
+      descr: 你必须非常努力，才能看起来毫不费力。
+    - name: MrZeFr的小窝
+      link: https://blog.mrzefr.cn
+      avatar: https://blog.mrzefr.cn/Doraemon.ico
+      descr: Hello World
     - name:  林中鹿仙
       link: https://www.zoukaixin.com
       avatar: https://zoukaixin.com/upload/2021/02/blog11-db339d4466164bd081ca1aec75a295db.png
@@ -29,55 +38,86 @@
       link: https://www.little-demon.cn
       avater: https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/tit.png
       descr: 一直在路上奋斗的电子爱好者
+    - name: Gahotx
+      link: https://gahotx.cn/
+      avatar: https://pub.gahotx.cn/photo/cat.jpg
+      descr: Don’t repeat yourself
+    - name: guole's Blog
+      link: https://guole.fun/
+      avatar: https://cdn.guole.fun/logo/guole.fun.png
+      descr: 保持理智，相信明天。
+    - name: 灰鸿的空间
+      link: https://space.greyh.cn
+      avatar: https://gitee.com/huihongyhy/imgbed/raw/master/img/avatar.png
+      descr: 一名科技爱好者的空间
+    - name: Lytian
+      link: https://www.lytian.xyz
+      avatar: https://tianli-blog.club/img/friend_404.gif
+      descr: 生命不息，折腾不止
+    - name: Syyyj
+      link: https://blog.刘昊然.com
+      avatar: https://xn--2br199bf9h.com/upload/images/2021/7/184258Iul37.jpg
+      descr: 不想变成肥宅的小白技术宅
+    - name: 夏末随风的小站
+      link: https://awslnotbad.cn
+      avatar: https://gitee.com/Awslnotbad/picture/raw/master/img/headpic.jpg
+      descr: 姑苏城外一茅屋 万树梅花月满天
+    - name: Cmgdels’s Blog
+      link: https://cmgdels.github.io
+      avatar: https://i.niupic.com/images/2021/10/23/9EsI.png
+      descr: 分享我的学习笔记
+    - name: 一人の境
+      link: https://blog.holic-x.com/wv-blog
+      avatar: https://blog.holic-x.com/img/avatar.jpg
+      descr: Carpe Diem ~
 - class_name: 酷安友链
   class_desc: 基佬聚集处
   link_list:
-    - name: Seimo
-      link: https://seimo.xyz/
-      avatar: https://avatar.dawnlab.me/qq/2789263103
-      descr: 谎言重复了一千遍就成了真理。
-    - name: 樱花社区
-      link: https://sakura-bbs.cn/
-      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/web/%E6%A8%B1%E8%8A%B1.jpg
-      descr: 小而美的极客社区
-    - name: 老陈の咸鱼日常
-      link: http://fantanstic.top/
-      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/IMG_20201116_215237.jpg
-      descr: Never Settle
-    - name: 氢橙数码
-      link: https://www.rmvsm.cn/
-      avatar: https://bbs.rmvsm.cn/storage/avatars/000/00/18/32.png?1609568068
-      descr: 站在科技与生活的十字路口
+    - name: 小浣熊的技术小站
+      link: https://nimitiz.cn/
+      avatar: https://ftp.bmp.ovh/imgs/2020/08/af2963980918097c.jpg
+      descr: 生命不息，折腾不止
+    - name: MJ's Blog
+      descr: 醒亦念卿，梦亦念卿
+      link: https://blog.justlovesmile.top
+      avatar: https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/image/logo.jpg 
 
 
 - class_name: 友情链接
-  class_desc: 大佬聚集处
+  class_desc: 都是些前端大佬
   link_list:
     - name: Akilarの糖果屋
       link: https://akilar.top/
       avatar: https://akilar.top/img/siteicon/favicon.png
       descr: 期待您的光临！
     - name: 小冰博客
-      link: https://zfe.one
+      link: https://zfe.space
       avatar: https://zfe.space/images/headimage.png
       descr: 做个有梦想的人！
     - name: 小嘉的部落格	 # 站點名稱
       link: https://blog.imzjw.cn    # 站點鏈接
       avatar: https://cdn.jsdelivr.net/gh/zjwo/CDN/img/blog/avatar.jpg  # 站點頭像
       descr: 好记性不如烂笔头	 # 站點描述
-    
+    - name: Heo
+      link: https://blog.zhheo.com/
+      avatar: https://blog.zhheo.com/img/avatar.png
+      descr: 爱折腾的设计师 
+    - name: Eurkon
+      link: https://blog.eurkon.com
+      avatar: https://blog.eurkon.com/images/user/avatar.jpg
+      descr: 不只是代码的搬运工
+    - name: iMaeGoo’s Blog
+      descr: 虹墨空间站
+      link: https://www.imaegoo.com/
+      avatar: https://www.imaegoo.com/images/avatar.jpg
 - class_name: 网站
   class_desc: 值得推荐的网站
   link_list:
-    - name: JerryC
-      link: https://jerryc.me/
-      avatar: https://jerryc.me/image/avatar.png
-      descr: 本站主题来源
+    - name: 绵阳市普明中学
+      link: http://www.scmypz.com/
+      avatar: http://www.scmypz.com/Skin/scmypz/images/logo.png
+      descr: “四川省绵阳普明中学”官方网站!
     - name: Hexo
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简单且强大的网誌框架
-    - name: 夏日甜提子
-      link: https://tianli0.xyz
-      avatar: https://tuchuang-1258604854.cos.ap-chengdu.myqcloud.com/link3.jpg
-      descr: 三人运维的小网站
